@@ -4,3 +4,9 @@
     justify-content: center;
     align-items: center;
 }
+.cat-imgs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
