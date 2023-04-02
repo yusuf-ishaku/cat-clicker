@@ -16,3 +16,6 @@ ul > li{
     padding: 1rem;
     border: 1px solid black;
 }
+.ct{
+    object-fit: cover;
+}

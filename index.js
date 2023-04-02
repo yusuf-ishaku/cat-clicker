@@ -10,7 +10,10 @@ cats.forEach((elem, index) =>{
         for(i = 0; i < clicker.length; i++){
             catSpace[i].style.display = "none";
         }
-        catSpace[index].style.display = "block";
+        let mar = document.createElement("h1", HTMLHeadingElement);
+        mar.textContent = elem.textContent;
+        catSpace[index].appendChild(mar);
+        catSpace[index].style.display = "flex";
     })
 });
 catSpace.forEach((elem)=>elem.style.display = "none")
