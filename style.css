@@ -10,3 +10,9 @@
     align-items: center;
     justify-content: center;
 }
+ul > li{
+    display: block;
+    width: auto;
+    padding: 1rem;
+    border: 1px solid black;
+}
