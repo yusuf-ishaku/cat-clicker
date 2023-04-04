@@ -16,6 +16,10 @@ ul > li{
     padding: 1rem;
     border: 1px solid black;
 }
+.cat-list{
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
 .ct{
     object-fit: cover;
 }
