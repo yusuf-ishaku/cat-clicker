@@ -16,6 +16,15 @@ ul > li{
     padding: 1rem;
     border: 1px solid black;
 }
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.input > input{
+    margin-block: 0.6rem;
+    padding: 0.3rem;
+}
 .cat-list{
     margin-right: 1rem;
     padding: 0.5rem;

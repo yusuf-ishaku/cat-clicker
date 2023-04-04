@@ -28,7 +28,7 @@ let octopus = {
         return model[x]
     },
     setClickCount: (x) =>{
-        octopus.getCat(x).clickCount = octopus.getCat(x).clickCount + 1; console.log(octopus.getCat(x).clickCount);
+        octopus.getCat(x).clickCount = octopus.getCat(x).clickCount + 1;
         let {name, clickCount } = octopus.getCat(x);
         view.displayCat(name, clickCount, x+1)
     },
