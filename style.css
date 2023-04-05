@@ -17,7 +17,7 @@ ul > li{
     border: 1px solid black;
 }
 .input{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 500px;
 }

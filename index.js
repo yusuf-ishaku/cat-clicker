@@ -30,7 +30,22 @@ let octopus = {
     setClickCount: (x) =>{
         octopus.getCat(x).clickCount = octopus.getCat(x).clickCount + 1;
         let {name, clickCount } = octopus.getCat(x);
-        view.displayCat(name, clickCount, x+1)
+        view.displayCat(name, clickCount, x+1);
+        octopus.renderAdmin(x);
+    },
+    renderAdmin:(x) =>{
+        let admin = document.querySelector(".admin");
+        document.querySelector(".name").value = ""
+            document.querySelector(".name").value = octopus.getCat(x).name;
+            document.querySelector(".clickc").value = ""
+            document.querySelector(".clickc").value = octopus.getCat(x).clickCount
+        admin.onclick = () =>{
+            document.querySelector(".input").style.display = "flex";
+        }
+        let cancel = document.querySelector(".cancel");
+        cancel.onclick = () =>{
+            document.querySelector(".input").style.display = "none"
+        }
     },
     render: ()=>{
         view.init();
@@ -63,7 +78,8 @@ let view = {
             catLi.textContent = elem.name;
             catLi.onclick = (() =>{ 
                 let {name, clickCount} = octopus.getCat(y); 
-                view.displayCat(name, clickCount, y+1);                                                                                                       5
+                view.displayCat(name, clickCount, y+1);     
+                octopus.renderAdmin(y);                                                                                                  5
             });
             lis.appendChild(catLi);
         })
@@ -72,6 +88,7 @@ let view = {
 
 }
 octopus.render();
+octopus.renderAdmin(0)
 let clicker = document.querySelectorAll(".click");
 let catSpace = document.querySelectorAll(".cat-img");
 console.log(catSpace);
