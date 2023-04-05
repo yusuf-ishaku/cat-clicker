@@ -75,6 +75,7 @@ let view = {
             let name = document.querySelector(".name").value;
             let clickCount = document.querySelector(".clickc").value;
             view.setCat(x, name, clickCount);
+            document.querySelector(".input").style.display = "none"
         }
     },
     setCat: (x, name, clickCount) =>{
